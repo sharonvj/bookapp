@@ -1,0 +1,22 @@
+{
+  "name": "bookapp",
+  "version": "1.0.0",
+  "description": "assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sharon v j",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bower": "^1.8.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "lite-server": "^2.3.0"
+  }
+}

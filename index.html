@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="UTF-8">
+<title>Book Store</title>
+<base href="/">
+ <!-- begin:css -->
+<link rel="stylesheet" type="text/css" href="build/css/bookapp-1.0.0.min.css">
+<!-- end:css -->
+<!-- begin:js -->
+<script src="build/js/bookapp-1.0.0.min.js"></script>
+<!-- end:js -->
+</head>
+<body>
+<div>
+<div class="loader" ng-if="loader"></div>
+<div class="alert container alert-dismissable msg" ng-class="{'alert-danger':alertMsg.isDanger,'alert-success':!alertMsg.isDanger}" ng-show="alertMsg.status">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong ng-bind="alertMsg.mainText"></strong> <span ng-bind="alertMsg.text"></span>
+</div>
+<ng-view></ng-view>
+</div>
+</body>
+
+</html>
